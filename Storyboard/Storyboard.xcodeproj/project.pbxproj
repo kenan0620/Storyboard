@@ -15,6 +15,7 @@
 		273178AA1FC567C000A9762A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 273178A91FC567C000A9762A /* main.m */; };
 		273178B41FC567C000A9762A /* StoryboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 273178B31FC567C000A9762A /* StoryboardTests.m */; };
 		273178BF1FC567C000A9762A /* StoryboardUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 273178BE1FC567C000A9762A /* StoryboardUITests.m */; };
+		277314801FC7AE65007DEF49 /* ThreeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2773147F1FC7AE65007DEF49 /* ThreeCollectionViewCell.m */; };
 		27D8279C1FC6BBD30021A4A1 /* OneVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D8279B1FC6BBD30021A4A1 /* OneVC.m */; };
 		27D8279F1FC6BCD00021A4A1 /* OneTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D8279E1FC6BCD00021A4A1 /* OneTableViewCell.m */; };
 		27D827A21FC6C3400021A4A1 /* TwoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D827A11FC6C3400021A4A1 /* TwoVC.m */; };
@@ -55,6 +56,8 @@
 		273178BA1FC567C000A9762A /* StoryboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoryboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		273178BE1FC567C000A9762A /* StoryboardUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoryboardUITests.m; sourceTree = "<group>"; };
 		273178C01FC567C000A9762A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2773147E1FC7AE65007DEF49 /* ThreeCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeCollectionViewCell.h; sourceTree = "<group>"; };
+		2773147F1FC7AE65007DEF49 /* ThreeCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreeCollectionViewCell.m; sourceTree = "<group>"; };
 		27D8279A1FC6BBD30021A4A1 /* OneVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneVC.h; sourceTree = "<group>"; };
 		27D8279B1FC6BBD30021A4A1 /* OneVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneVC.m; sourceTree = "<group>"; };
 		27D8279D1FC6BCD00021A4A1 /* OneTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneTableViewCell.h; sourceTree = "<group>"; };
@@ -125,6 +128,8 @@
 				27D827A11FC6C3400021A4A1 /* TwoVC.m */,
 				27D827A31FC6C65E0021A4A1 /* ThreeVC.h */,
 				27D827A41FC6C65E0021A4A1 /* ThreeVC.m */,
+				2773147E1FC7AE65007DEF49 /* ThreeCollectionViewCell.h */,
+				2773147F1FC7AE65007DEF49 /* ThreeCollectionViewCell.m */,
 				273178A01FC567C000A9762A /* Main.storyboard */,
 				273178A31FC567C000A9762A /* Assets.xcassets */,
 				273178A51FC567C000A9762A /* LaunchScreen.storyboard */,
@@ -288,6 +293,7 @@
 				2731789F1FC567C000A9762A /* ViewController.m in Sources */,
 				27D827A51FC6C65E0021A4A1 /* ThreeVC.m in Sources */,
 				27D8279C1FC6BBD30021A4A1 /* OneVC.m in Sources */,
+				277314801FC7AE65007DEF49 /* ThreeCollectionViewCell.m in Sources */,
 				273178AA1FC567C000A9762A /* main.m in Sources */,
 				27D827A21FC6C3400021A4A1 /* TwoVC.m in Sources */,
 				27D8279F1FC6BCD00021A4A1 /* OneTableViewCell.m in Sources */,

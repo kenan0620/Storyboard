@@ -46,7 +46,7 @@
                                 <rect key="frame" x="122" y="164" width="132" height="30"/>
                                 <state key="normal" title="CollectionView使用"/>
                                 <connections>
-                                    <segue destination="dqZ-vS-T4F" kind="push" id="Fwg-Vu-Ifx"/>
+                                    <segue destination="dqZ-vS-T4F" kind="show" id="Fwg-Vu-Ifx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -70,18 +70,84 @@
         <!--CollectionView示例-->
         <scene sceneID="Z91-AE-zgY">
             <objects>
-                <viewController id="dqZ-vS-T4F" sceneMemberID="viewController">
+                <viewController id="dqZ-vS-T4F" customClass="ThreeVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dnk-2C-oDk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="972-f0-a13">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3eD-J5-FN3">
+                                    <size key="itemSize" width="135" height="167"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ThreeCollectionViewCellID" id="lgf-96-gil" customClass="ThreeCollectionViewCell">
+                                        <rect key="frame" x="10" y="10" width="135" height="167"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="135" height="167"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Labeldfg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dbu-cQ-eV7">
+                                                    <rect key="frame" x="34" y="6" width="67" height="20.5"/>
+                                                    <color key="backgroundColor" red="0.50845689076616862" green="0.56297271547502936" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyP-N6-slh">
+                                                    <rect key="frame" x="44.5" y="39.5" width="46" height="30"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="btnClick:" destination="lgf-96-gil" eventType="touchUpInside" id="pOu-Ry-1SO"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="1" green="0.68683772780608965" blue="0.80680280106461033" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="kyP-N6-slh" secondAttribute="bottom" constant="97.5" id="IYu-hu-WfA"/>
+                                            <constraint firstItem="kyP-N6-slh" firstAttribute="top" secondItem="Dbu-cQ-eV7" secondAttribute="bottom" constant="13" id="KCz-Ya-yIC"/>
+                                            <constraint firstItem="Dbu-cQ-eV7" firstAttribute="centerX" secondItem="lgf-96-gil" secondAttribute="centerX" id="a8h-ja-0Dv"/>
+                                            <constraint firstItem="kyP-N6-slh" firstAttribute="centerX" secondItem="lgf-96-gil" secondAttribute="centerX" id="jIB-YX-Lpv"/>
+                                            <constraint firstItem="Dbu-cQ-eV7" firstAttribute="top" secondItem="lgf-96-gil" secondAttribute="top" constant="6" id="oO3-xx-lwm"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="collectionBtn" destination="kyP-N6-slh" id="CMs-DL-oZF"/>
+                                            <outlet property="collectionLab" destination="Dbu-cQ-eV7" id="Ctv-xk-AeC"/>
+                                            <segue destination="f9w-o6-DA8" kind="show" id="Nfq-PI-XUz"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="dqZ-vS-T4F" id="DbH-zY-P6m"/>
+                                    <outlet property="delegate" destination="dqZ-vS-T4F" id="YgC-Tv-MnF"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="972-f0-a13" firstAttribute="leading" secondItem="Jb4-Wi-kMe" secondAttribute="leading" id="HFW-fx-hjI"/>
+                            <constraint firstItem="Jb4-Wi-kMe" firstAttribute="trailing" secondItem="972-f0-a13" secondAttribute="trailing" id="Iii-nm-tha"/>
+                            <constraint firstItem="Jb4-Wi-kMe" firstAttribute="bottom" secondItem="972-f0-a13" secondAttribute="bottom" id="JfJ-0q-BSp"/>
+                            <constraint firstItem="972-f0-a13" firstAttribute="top" secondItem="Jb4-Wi-kMe" secondAttribute="top" id="nlq-GK-JiH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Jb4-Wi-kMe"/>
                     </view>
-                    <navigationItem key="navigationItem" title="CollectionView示例" id="Mft-qR-QbA"/>
+                    <navigationItem key="navigationItem" title="CollectionView示例" id="Mft-qR-QbA">
+                        <barButtonItem key="backBarButtonItem" title="CollectionView示例" id="pZj-Qj-rwh"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="threeCollection" destination="972-f0-a13" id="s1o-qh-d1J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8VC-rd-iFk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1166" y="661"/>
+            <point key="canvasLocation" x="-231" y="604"/>
         </scene>
         <!--One-->
         <scene sceneID="vtu-7y-bOI">
@@ -202,4 +268,7 @@
             <point key="canvasLocation" x="495" y="-187"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Nfq-PI-XUz"/>
+    </inferredMetricsTieBreakers>
 </document>

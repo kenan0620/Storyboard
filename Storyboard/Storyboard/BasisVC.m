@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UIView *basisView;
 @property (weak, nonatomic) IBOutlet UIImageView *basisImageView;
 @property (weak, nonatomic) IBOutlet UITextView *basisTextView;
+@property (weak, nonatomic) IBOutlet UISwitch *basisSwitch;
 
 @end
 
@@ -38,6 +39,14 @@
  如果想要设置自适应，只需要设置图片的二个相邻约束即可。
  */
 
+
+- (IBAction)switchClick:(UISwitch *)sender {
+    if (sender.on) {
+       NSLog(@"on");
+    }else{
+        NSLog(@"off");
+    }
+}
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self.basisTextView resignFirstResponder];

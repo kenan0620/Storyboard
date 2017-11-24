@@ -220,9 +220,17 @@
                                     <action selector="switchClick:" destination="MXn-Yo-FSB" eventType="valueChanged" id="TMK-YN-LrA"/>
                                 </connections>
                             </switch>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="EpV-dw-9B1">
+                                <rect key="frame" x="18" y="572" width="339" height="31"/>
+                                <connections>
+                                    <action selector="sliderChange:" destination="MXn-Yo-FSB" eventType="valueChanged" id="Tes-pU-y2D"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="oqw-VP-xg8" firstAttribute="trailing" secondItem="EpV-dw-9B1" secondAttribute="trailing" constant="20" id="1ML-L3-aal"/>
+                            <constraint firstItem="EpV-dw-9B1" firstAttribute="top" secondItem="Bq8-Bx-8xW" secondAttribute="bottom" constant="30" id="5xr-YZ-sN1"/>
                             <constraint firstItem="SiR-iz-aED" firstAttribute="leading" secondItem="oqw-VP-xg8" secondAttribute="leading" constant="20" id="Al9-87-mEl"/>
                             <constraint firstItem="oqw-VP-xg8" firstAttribute="trailing" secondItem="SiR-iz-aED" secondAttribute="trailing" constant="20" id="BCE-Qw-Qni"/>
                             <constraint firstItem="6NV-KG-ub2" firstAttribute="top" secondItem="oqw-VP-xg8" secondAttribute="top" constant="30" id="DVO-sU-p4I"/>
@@ -231,6 +239,7 @@
                             <constraint firstItem="SiR-iz-aED" firstAttribute="top" secondItem="0ON-yS-UR4" secondAttribute="bottom" constant="30" id="MvP-uT-aRW"/>
                             <constraint firstItem="Bq8-Bx-8xW" firstAttribute="leading" secondItem="0ON-yS-UR4" secondAttribute="leading" id="Ygg-Bb-aad"/>
                             <constraint firstItem="6NV-KG-ub2" firstAttribute="centerX" secondItem="VRe-dX-KqA" secondAttribute="centerX" id="YnQ-gU-Awt"/>
+                            <constraint firstItem="EpV-dw-9B1" firstAttribute="leading" secondItem="oqw-VP-xg8" secondAttribute="leading" constant="20" id="Yrh-fV-FF6"/>
                             <constraint firstItem="PUj-4p-sKG" firstAttribute="top" secondItem="6NV-KG-ub2" secondAttribute="bottom" constant="30" id="ZQw-A8-FoB"/>
                             <constraint firstItem="Bq8-Bx-8xW" firstAttribute="trailing" secondItem="0ON-yS-UR4" secondAttribute="trailing" id="cah-bk-2e9"/>
                             <constraint firstItem="Bq8-Bx-8xW" firstAttribute="top" secondItem="FXJ-nc-CIe" secondAttribute="bottom" constant="30" id="dWb-pB-HYr"/>
@@ -248,6 +257,7 @@
                         <outlet property="basisBtn" destination="PUj-4p-sKG" id="BO0-FQ-p00"/>
                         <outlet property="basisImageView" destination="FXJ-nc-CIe" id="mM4-Wy-AQJ"/>
                         <outlet property="basisLab" destination="6NV-KG-ub2" id="eVD-Mf-8zo"/>
+                        <outlet property="basisSlider" destination="EpV-dw-9B1" id="rT0-eO-sQx"/>
                         <outlet property="basisSwitch" destination="ik0-cx-H8N" id="I8Q-TA-ARq"/>
                         <outlet property="basisTextField" destination="0ON-yS-UR4" id="9Jl-bq-RYL"/>
                         <outlet property="basisTextView" destination="Bq8-Bx-8xW" id="pSb-u6-vT3"/>

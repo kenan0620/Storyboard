@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *basisImageView;
 @property (weak, nonatomic) IBOutlet UITextView *basisTextView;
 @property (weak, nonatomic) IBOutlet UISwitch *basisSwitch;
+@property (weak, nonatomic) IBOutlet UISlider *basisSlider;
 
 @end
 
@@ -25,7 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
- 
+    self.basisSlider.value = 0;
     
 }
 - (IBAction)basisBtnClick:(id)sender {
@@ -42,10 +43,14 @@
 
 - (IBAction)switchClick:(UISwitch *)sender {
     if (sender.on) {
-       NSLog(@"on");
+       NSLog(@"UISwitch on");
     }else{
-        NSLog(@"off");
+        NSLog(@"UISwitch off");
     }
+}
+
+- (IBAction)sliderChange:(UISlider *)sender {
+    NSLog(@"UISlider %f",sender.value);
 }
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{

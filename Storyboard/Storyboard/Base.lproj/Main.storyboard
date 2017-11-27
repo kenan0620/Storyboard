@@ -36,21 +36,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psJ-jJ-HpM">
-                                <rect key="frame" x="133" y="521" width="88" height="30"/>
+                                <rect key="frame" x="133" y="573" width="88" height="30"/>
                                 <state key="normal" title="TabView使用"/>
                                 <connections>
                                     <segue destination="NYS-mH-x3V" kind="show" id="97y-S1-BPI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erp-z3-rhV">
-                                <rect key="frame" x="111" y="567" width="132" height="30"/>
+                                <rect key="frame" x="116" y="617" width="132" height="30"/>
                                 <state key="normal" title="CollectionView使用"/>
                                 <connections>
                                     <segue destination="dqZ-vS-T4F" kind="show" id="Fwg-Vu-Ifx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIo-wX-2Xh">
-                                <rect key="frame" x="140" y="133" width="94" height="30"/>
+                                <rect key="frame" x="140" y="436" width="94" height="30"/>
                                 <state key="normal" title="WebView使用"/>
                                 <connections>
                                     <segue destination="Ddy-4s-Jbd" kind="show" id="ziI-bK-Ceq"/>
@@ -64,34 +64,43 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPs-Hf-P8E">
-                                <rect key="frame" x="129" y="183" width="117" height="30"/>
+                                <rect key="frame" x="129" y="483" width="117" height="30"/>
                                 <state key="normal" title="UIScrollView使用"/>
                                 <connections>
                                     <segue destination="B37-DV-Dsa" kind="show" id="fut-HX-TG6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubA-0C-Bwc">
-                                <rect key="frame" x="114" y="233" width="148" height="30"/>
+                                <rect key="frame" x="113" y="528" width="148" height="30"/>
                                 <state key="normal" title="UIScrollView竖向使用"/>
                                 <connections>
                                     <segue destination="sw1-1i-QYT" kind="show" id="4lV-Bw-n7k"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGi-yN-TdI">
+                                <rect key="frame" x="131" y="137" width="114" height="30"/>
+                                <state key="normal" title="基本控件的使用1"/>
+                                <connections>
+                                    <segue destination="mf2-uj-Ml5" kind="show" id="unR-FS-UsQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.83605175629023565" green="1" blue="0.64971817158186018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ubA-0C-Bwc" firstAttribute="top" secondItem="jPs-Hf-P8E" secondAttribute="bottom" constant="20" id="35p-Ok-xrJ"/>
+                            <constraint firstItem="ubA-0C-Bwc" firstAttribute="centerX" secondItem="NIo-wX-2Xh" secondAttribute="centerX" id="0vn-2q-g6b"/>
                             <constraint firstItem="Nsa-Tt-N8i" firstAttribute="top" secondItem="b8s-YZ-hkf" secondAttribute="top" constant="20" id="7sl-Tr-rMO"/>
-                            <constraint firstItem="ubA-0C-Bwc" firstAttribute="centerX" secondItem="jPs-Hf-P8E" secondAttribute="centerX" id="BCu-KF-pVR"/>
-                            <constraint firstItem="erp-z3-rhV" firstAttribute="centerX" secondItem="psJ-jJ-HpM" secondAttribute="centerX" id="ECE-57-hDb"/>
-                            <constraint firstItem="erp-z3-rhV" firstAttribute="leading" secondItem="b8s-YZ-hkf" secondAttribute="leading" constant="111" id="H8y-JD-vUz"/>
+                            <constraint firstItem="ubA-0C-Bwc" firstAttribute="centerX" secondItem="jPs-Hf-P8E" secondAttribute="centerX" id="AMM-gK-3pk"/>
+                            <constraint firstItem="ubA-0C-Bwc" firstAttribute="top" secondItem="jPs-Hf-P8E" secondAttribute="bottom" constant="15" id="DHd-TR-FUq"/>
+                            <constraint firstItem="LGi-yN-TdI" firstAttribute="top" secondItem="Nsa-Tt-N8i" secondAttribute="bottom" constant="23" id="G2D-J0-NIG"/>
+                            <constraint firstItem="erp-z3-rhV" firstAttribute="leading" secondItem="b8s-YZ-hkf" secondAttribute="leading" constant="116" id="H8y-JD-vUz"/>
+                            <constraint firstItem="LGi-yN-TdI" firstAttribute="centerX" secondItem="jPs-Hf-P8E" secondAttribute="centerX" id="HLi-4n-V52"/>
                             <constraint firstItem="NIo-wX-2Xh" firstAttribute="centerX" secondItem="5fj-Sq-SUk" secondAttribute="centerX" id="ItP-ZU-uDr"/>
-                            <constraint firstItem="ubA-0C-Bwc" firstAttribute="centerX" secondItem="5fj-Sq-SUk" secondAttribute="centerX" id="Kug-j1-M8B"/>
+                            <constraint firstItem="erp-z3-rhV" firstAttribute="top" secondItem="psJ-jJ-HpM" secondAttribute="bottom" constant="14" id="LYf-o9-wFV"/>
+                            <constraint firstItem="psJ-jJ-HpM" firstAttribute="top" secondItem="ubA-0C-Bwc" secondAttribute="bottom" constant="15" id="SFA-Ol-iSX"/>
                             <constraint firstItem="Nsa-Tt-N8i" firstAttribute="centerX" secondItem="5fj-Sq-SUk" secondAttribute="centerX" id="X51-ia-AkW"/>
-                            <constraint firstItem="b8s-YZ-hkf" firstAttribute="bottom" secondItem="psJ-jJ-HpM" secondAttribute="bottom" constant="116" id="gFU-gp-gtZ"/>
-                            <constraint firstItem="erp-z3-rhV" firstAttribute="top" secondItem="psJ-jJ-HpM" secondAttribute="bottom" constant="16" id="hBw-sh-0pW"/>
-                            <constraint firstItem="jPs-Hf-P8E" firstAttribute="top" secondItem="NIo-wX-2Xh" secondAttribute="bottom" constant="20" id="lXc-7H-0nU"/>
-                            <constraint firstItem="NIo-wX-2Xh" firstAttribute="top" secondItem="Nsa-Tt-N8i" secondAttribute="bottom" constant="19" id="rD1-4j-qco"/>
+                            <constraint firstItem="NIo-wX-2Xh" firstAttribute="top" secondItem="Nsa-Tt-N8i" secondAttribute="bottom" constant="322" id="rD1-4j-qco"/>
+                            <constraint firstItem="jPs-Hf-P8E" firstAttribute="top" secondItem="NIo-wX-2Xh" secondAttribute="bottom" constant="17" id="yLz-7J-oeM"/>
+                            <constraint firstItem="psJ-jJ-HpM" firstAttribute="leading" secondItem="Nsa-Tt-N8i" secondAttribute="leading" id="zh4-Y9-r7j"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="b8s-YZ-hkf"/>
                     </view>
@@ -540,7 +549,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ftv-Ed-a5V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2271" y="-2133"/>
+            <point key="canvasLocation" x="2049" y="-2133"/>
+        </scene>
+        <!--基本控件的使用1-->
+        <scene sceneID="bed-Ly-04H">
+            <objects>
+                <viewController id="mf2-uj-Ml5" customClass="SevenVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JbO-jS-AQo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Uqe-VL-2jc"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="基本控件的使用1" id="zXq-ru-Qmf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MTy-9r-WyM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2868" y="-2133"/>
         </scene>
         <!--ShowMessageVC-->
         <scene sceneID="2Ec-Tv-hoN">

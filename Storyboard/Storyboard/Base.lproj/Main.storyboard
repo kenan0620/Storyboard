@@ -53,14 +53,14 @@
                                 <rect key="frame" x="140" y="133" width="94" height="30"/>
                                 <state key="normal" title="WebView使用"/>
                                 <connections>
-                                    <segue destination="Ddy-4s-Jbd" kind="push" id="ziI-bK-Ceq"/>
+                                    <segue destination="Ddy-4s-Jbd" kind="show" id="ziI-bK-Ceq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nsa-Tt-N8i">
                                 <rect key="frame" x="133" y="84" width="108" height="30"/>
                                 <state key="normal" title="基本控件的使用"/>
                                 <connections>
-                                    <segue destination="MXn-Yo-FSB" kind="push" id="qkh-m8-TOL"/>
+                                    <segue destination="MXn-Yo-FSB" kind="show" id="qkh-m8-TOL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPs-Hf-P8E">
@@ -68,7 +68,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="UIScrollView使用"/>
                                 <connections>
-                                    <segue destination="B37-DV-Dsa" kind="push" id="fut-HX-TG6"/>
+                                    <segue destination="B37-DV-Dsa" kind="show" id="fut-HX-TG6"/>
                                 </connections>
                             </button>
                         </subviews>

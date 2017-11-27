@@ -1,19 +1,22 @@
 //
-//  FiveScrollViewVC.m
+//  SixScrollViewVC.m
 //  Storyboard
 //
 //  Created by Conan on 2017/11/27.
 //  Copyright © 2017年 柯南. All rights reserved.
 //
 
-#import "FiveScrollViewVC.h"
+#import "SixScrollViewVC.h"
 
-@interface FiveScrollViewVC ()
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *setScrollViewWidth;
+@interface SixScrollViewVC ()
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *setScrollViewHeight;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *setView1Height;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *setView2Height;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *setView3Height;
 
 @end
 
-@implementation FiveScrollViewVC
+@implementation SixScrollViewVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,7 +25,8 @@
 
 - (void)updateViewConstraints{
     [super updateViewConstraints];
-    self.setScrollViewWidth.constant = 2000;
+    self.setScrollViewHeight.constant = CGRectGetHeight([UIScreen mainScreen].bounds) * 3;
+    self.setView1Height.constant =self.setView2Height.constant =self.setView3Height.constant = CGRectGetHeight([UIScreen mainScreen].bounds);
 }
 
 - (void)didReceiveMemoryWarning {

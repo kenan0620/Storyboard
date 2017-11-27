@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		272F2CBD1FCBB04B00A8D432 /* FiveScrollViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 272F2CBC1FCBB04B00A8D432 /* FiveScrollViewVC.m */; };
+		272F2CC01FCBC05700A8D432 /* SixScrollViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 272F2CBF1FCBC05700A8D432 /* SixScrollViewVC.m */; };
 		2731789C1FC567C000A9762A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2731789B1FC567C000A9762A /* AppDelegate.m */; };
 		2731789F1FC567C000A9762A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2731789E1FC567C000A9762A /* ViewController.m */; };
 		273178A21FC567C000A9762A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 273178A01FC567C000A9762A /* Main.storyboard */; };
@@ -46,6 +47,8 @@
 /* Begin PBXFileReference section */
 		272F2CBB1FCBB04B00A8D432 /* FiveScrollViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FiveScrollViewVC.h; sourceTree = "<group>"; };
 		272F2CBC1FCBB04B00A8D432 /* FiveScrollViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FiveScrollViewVC.m; sourceTree = "<group>"; };
+		272F2CBE1FCBC05700A8D432 /* SixScrollViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SixScrollViewVC.h; sourceTree = "<group>"; };
+		272F2CBF1FCBC05700A8D432 /* SixScrollViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SixScrollViewVC.m; sourceTree = "<group>"; };
 		273178971FC567C000A9762A /* Storyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Storyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2731789A1FC567C000A9762A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2731789B1FC567C000A9762A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -148,6 +151,8 @@
 				277314871FC7F4A1007DEF49 /* FourWebVC.m */,
 				272F2CBB1FCBB04B00A8D432 /* FiveScrollViewVC.h */,
 				272F2CBC1FCBB04B00A8D432 /* FiveScrollViewVC.m */,
+				272F2CBE1FCBC05700A8D432 /* SixScrollViewVC.h */,
+				272F2CBF1FCBC05700A8D432 /* SixScrollViewVC.m */,
 				273178A01FC567C000A9762A /* Main.storyboard */,
 				273178A31FC567C000A9762A /* Assets.xcassets */,
 				273178A51FC567C000A9762A /* LaunchScreen.storyboard */,
@@ -312,6 +317,7 @@
 				2731789F1FC567C000A9762A /* ViewController.m in Sources */,
 				27D827A51FC6C65E0021A4A1 /* ThreeVC.m in Sources */,
 				27D8279C1FC6BBD30021A4A1 /* OneVC.m in Sources */,
+				272F2CC01FCBC05700A8D432 /* SixScrollViewVC.m in Sources */,
 				272F2CBD1FCBB04B00A8D432 /* FiveScrollViewVC.m in Sources */,
 				277314801FC7AE65007DEF49 /* ThreeCollectionViewCell.m in Sources */,
 				273178AA1FC567C000A9762A /* main.m in Sources */,

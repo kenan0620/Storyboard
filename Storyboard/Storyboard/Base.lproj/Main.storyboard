@@ -410,7 +410,35 @@
                     <view key="view" contentMode="scaleToFill" id="nvy-LD-xGp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HmG-Ns-Nzz">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jGY-fz-hMU">
+                                        <rect key="frame" x="0.0" y="0.0" width="2400" height="603"/>
+                                        <color key="backgroundColor" red="0.77229212444505535" green="1" blue="0.82941209180724096" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="2400" id="k3P-mJ-Gqd"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.83250319836224906" blue="0.97433322402216693" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="jGY-fz-hMU" firstAttribute="leading" secondItem="HmG-Ns-Nzz" secondAttribute="leading" id="CjY-Ph-kU7"/>
+                                    <constraint firstItem="jGY-fz-hMU" firstAttribute="centerY" secondItem="HmG-Ns-Nzz" secondAttribute="centerY" id="MVr-1E-56T"/>
+                                    <constraint firstItem="jGY-fz-hMU" firstAttribute="top" secondItem="HmG-Ns-Nzz" secondAttribute="top" id="UcR-8w-Lpl"/>
+                                    <constraint firstAttribute="trailing" secondItem="jGY-fz-hMU" secondAttribute="trailing" constant="135" id="eFv-hT-8Pn"/>
+                                    <constraint firstAttribute="bottom" secondItem="jGY-fz-hMU" secondAttribute="bottom" id="tAK-Jq-VbX"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ATj-Du-9R7" firstAttribute="bottom" secondItem="HmG-Ns-Nzz" secondAttribute="bottom" id="0Et-1n-adL"/>
+                            <constraint firstItem="HmG-Ns-Nzz" firstAttribute="top" secondItem="ATj-Du-9R7" secondAttribute="top" id="1HY-71-jqf"/>
+                            <constraint firstItem="ATj-Du-9R7" firstAttribute="trailing" secondItem="HmG-Ns-Nzz" secondAttribute="trailing" id="2s9-yI-W8k"/>
+                            <constraint firstItem="HmG-Ns-Nzz" firstAttribute="leading" secondItem="ATj-Du-9R7" secondAttribute="leading" id="Bhj-hc-r8b"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ATj-Du-9R7"/>
                     </view>
                     <navigationItem key="navigationItem" title="UIScrollView示例" id="hj6-hp-Eqk"/>

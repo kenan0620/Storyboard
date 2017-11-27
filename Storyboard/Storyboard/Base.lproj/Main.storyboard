@@ -77,6 +77,16 @@
                                     <segue destination="mf2-uj-Ml5" kind="show" id="unR-FS-UsQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVy-e5-vRD">
+                                <rect key="frame" x="129.5" y="187" width="116" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="sWb-M3-aMn"/>
+                                </constraints>
+                                <state key="normal" title="基本控件的使用2"/>
+                                <connections>
+                                    <segue destination="3A3-F3-yLw" kind="show" id="AVL-WZ-u0d"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erp-z3-rhV">
                                 <rect key="frame" x="122" y="604" width="132" height="30"/>
                                 <state key="normal" title="CollectionView使用"/>
@@ -99,7 +109,9 @@
                             <constraint firstItem="erp-z3-rhV" firstAttribute="top" secondItem="psJ-jJ-HpM" secondAttribute="bottom" constant="19" id="gVJ-uW-U12"/>
                             <constraint firstItem="jPs-Hf-P8E" firstAttribute="top" secondItem="NIo-wX-2Xh" secondAttribute="bottom" constant="25" id="h6f-zX-w47"/>
                             <constraint firstItem="NIo-wX-2Xh" firstAttribute="trailing" secondItem="psJ-jJ-HpM" secondAttribute="trailing" id="hc3-nO-OII"/>
+                            <constraint firstItem="cVy-e5-vRD" firstAttribute="centerX" secondItem="5fj-Sq-SUk" secondAttribute="centerX" id="iZK-Wk-A1e"/>
                             <constraint firstAttribute="trailing" secondItem="ubA-0C-Bwc" secondAttribute="trailing" constant="97" id="jk4-1K-elY"/>
+                            <constraint firstItem="cVy-e5-vRD" firstAttribute="top" secondItem="LGi-yN-TdI" secondAttribute="bottom" constant="20" id="kMN-ye-4F5"/>
                             <constraint firstItem="NIo-wX-2Xh" firstAttribute="centerX" secondItem="LGi-yN-TdI" secondAttribute="centerX" id="kOv-1e-cjf"/>
                             <constraint firstItem="ubA-0C-Bwc" firstAttribute="top" secondItem="jPs-Hf-P8E" secondAttribute="bottom" constant="22" id="qdY-A4-S5Z"/>
                             <constraint firstItem="erp-z3-rhV" firstAttribute="centerX" secondItem="psJ-jJ-HpM" secondAttribute="centerX" id="vW2-6W-as3"/>
@@ -647,6 +659,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MTy-9r-WyM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2868" y="-2133.2833583208399"/>
+        </scene>
+        <!--基本控件的使用2-->
+        <scene sceneID="SsG-wr-hjR">
+            <objects>
+                <viewController id="3A3-F3-yLw" customClass="EightVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="20z-fW-8L5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PbL-cz-b73">
+                                <rect key="frame" x="0.0" y="94" width="375" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Dmm-v0-okw"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="柯南"/>
+                                    <segment title="神探"/>
+                                    <segment title="必杀技"/>
+                                    <segment title="圣灵"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentChange:" destination="3A3-F3-yLw" eventType="valueChanged" id="uJd-fA-B8v"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99560389997845722" green="1" blue="0.96232548341350266" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PbL-cz-b73" firstAttribute="leading" secondItem="1aM-Id-k4D" secondAttribute="leading" id="4M8-PF-GcU"/>
+                            <constraint firstItem="PbL-cz-b73" firstAttribute="top" secondItem="1aM-Id-k4D" secondAttribute="top" constant="30" id="Vy2-7M-olG"/>
+                            <constraint firstItem="1aM-Id-k4D" firstAttribute="trailing" secondItem="PbL-cz-b73" secondAttribute="trailing" id="zxV-l4-RUE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1aM-Id-k4D"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="基本控件的使用2" id="4bg-Tu-Npx"/>
+                    <connections>
+                        <outlet property="segmentView" destination="PbL-cz-b73" id="bj0-To-v9A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H0a-Iw-kS6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3593" y="-2136"/>
         </scene>
         <!--ShowMessageVC-->
         <scene sceneID="2Ec-Tv-hoN">

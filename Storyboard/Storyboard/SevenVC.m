@@ -9,14 +9,49 @@
 #import "SevenVC.h"
 
 @interface SevenVC ()
+@property (weak, nonatomic) IBOutlet UIView *datePickBgView;
 
+@property (weak, nonatomic) IBOutlet UIDatePicker *datePickerView;
+
+@property (nonatomic, strong) NSString *timeStr;
 @end
 
 @implementation SevenVC
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    self.datePickBgView.hidden = YES;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"YYYY-MM-dd"];
+    self.timeStr = [formatter stringFromDate:[NSDate date]];
+}
+
+
+- (IBAction)datePickerChange:(UIDatePicker *)sender {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"YYYY-MM-dd"];
+    NSString *dateTime = [formatter stringFromDate:sender.date];
+    self.timeStr =dateTime;
+    NSLog(@"%@",dateTime);
+}
+
+- (IBAction)timeChooseClick:(id)sender {
+    self.datePickBgView.hidden = NO;
+}
+
+- (IBAction)cancelDateChoose:(id)sender {
+    self.datePickBgView.hidden = YES;
+}
+
+- (IBAction)enterDateChoose:(id)sender {
+    self.datePickBgView.hidden = YES;
+    NSLog(@"%@",self.timeStr);
 }
 
 - (void)didReceiveMemoryWarning {

@@ -8,10 +8,12 @@
 
 #import "SevenVC.h"
 
-@interface SevenVC ()
+@interface SevenVC ()<UIPickerViewDelegate,UIPickerViewDataSource>
 @property (weak, nonatomic) IBOutlet UIView *datePickBgView;
 
 @property (weak, nonatomic) IBOutlet UIDatePicker *datePickerView;
+
+@property (weak, nonatomic) IBOutlet UIPickerView *basisPickerView;
 
 @property (nonatomic, strong) NSString *timeStr;
 @end
@@ -32,6 +34,19 @@
     self.timeStr = [formatter stringFromDate:[NSDate date]];
 }
 
+// 返回有多少列
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
+    return 5;
+}
+
+// 返回第component有多少行
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
+    return 3;
+}
+
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
+    NSLog(@"row:%ld,component:%ld",row,component);
+}
 
 - (IBAction)datePickerChange:(UIDatePicker *)sender {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];

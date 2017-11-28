@@ -718,25 +718,33 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mvv-cZ-neL">
-                                <rect key="frame" x="159" y="284" width="190" height="30"/>
+                                <rect key="frame" x="169" y="281" width="190" height="30"/>
                                 <state key="normal" title="UIActivityIndicatorView开始"/>
                                 <connections>
                                     <action selector="activityIndicatorLoad:" destination="3A3-F3-yLw" eventType="touchUpInside" id="pyu-82-C7C"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mg-Ah-lRP">
-                                <rect key="frame" x="159" y="338" width="190" height="30"/>
+                                <rect key="frame" x="169" y="327" width="190" height="30"/>
                                 <state key="normal" title="UIActivityIndicatorView结束"/>
                                 <connections>
                                     <action selector="activityIndicatorClose:" destination="3A3-F3-yLw" eventType="touchUpInside" id="Ydv-jr-jQW"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="hld-y9-L07">
-                                <rect key="frame" x="244" y="442" width="37" height="37"/>
-                                <color key="backgroundColor" red="0.93929032847414995" green="1" blue="0.88640666346801678" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" red="1" green="0.44291607104598418" blue="0.8541990729541421" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="color" red="1" green="0.095599123739438796" blue="0.070758246277022208" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </activityIndicatorView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e3d-AW-4K1">
+                                <rect key="frame" x="245" y="407" width="100" height="100"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="hOV-xW-fcL">
+                                        <rect key="frame" x="32" y="14" width="37" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.35174465673575128" green="0.35174465673575128" blue="0.35174465673575128" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="3GV-Bp-2Yw"/>
+                                    <constraint firstAttribute="width" constant="100" id="e91-CP-UPV"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.99560389997845722" green="1" blue="0.96232548341350266" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -744,34 +752,35 @@
                             <constraint firstItem="Rsh-aC-FCc" firstAttribute="leading" secondItem="bjS-Cd-voX" secondAttribute="trailing" constant="36" id="5a6-MI-MiT"/>
                             <constraint firstItem="bjS-Cd-voX" firstAttribute="top" secondItem="Rsh-aC-FCc" secondAttribute="top" id="6Ab-cS-gkG"/>
                             <constraint firstItem="mbe-H1-mFm" firstAttribute="top" secondItem="TQ2-8S-OB0" secondAttribute="bottom" constant="30" id="7r3-PV-8bk"/>
-                            <constraint firstItem="mbe-H1-mFm" firstAttribute="trailing" secondItem="Mvv-cZ-neL" secondAttribute="trailing" id="7tL-Wr-ZdL"/>
+                            <constraint firstItem="mbe-H1-mFm" firstAttribute="trailing" secondItem="Mvv-cZ-neL" secondAttribute="trailing" constant="-10" id="7tL-Wr-ZdL"/>
                             <constraint firstItem="1aM-Id-k4D" firstAttribute="trailing" secondItem="Rsh-aC-FCc" secondAttribute="trailing" constant="265" id="CMi-Gm-msh"/>
-                            <constraint firstItem="6mg-Ah-lRP" firstAttribute="top" secondItem="Mvv-cZ-neL" secondAttribute="bottom" constant="24" id="IHt-t4-UnH"/>
+                            <constraint firstItem="6mg-Ah-lRP" firstAttribute="top" secondItem="Mvv-cZ-neL" secondAttribute="bottom" constant="16" id="IHt-t4-UnH"/>
                             <constraint firstItem="mbe-H1-mFm" firstAttribute="centerX" secondItem="TQ2-8S-OB0" secondAttribute="centerX" id="Jk7-kU-j0H"/>
                             <constraint firstItem="bjS-Cd-voX" firstAttribute="centerY" secondItem="xg8-us-8HO" secondAttribute="centerY" id="KUR-WR-3c0"/>
-                            <constraint firstItem="hld-y9-L07" firstAttribute="top" secondItem="6mg-Ah-lRP" secondAttribute="bottom" constant="74" id="Ozr-ZK-cWH"/>
                             <constraint firstItem="6mg-Ah-lRP" firstAttribute="leading" secondItem="Mvv-cZ-neL" secondAttribute="leading" id="UaU-RY-Xt2"/>
                             <constraint firstItem="PbL-cz-b73" firstAttribute="top" secondItem="1aM-Id-k4D" secondAttribute="top" constant="30" id="Vy2-7M-olG"/>
                             <constraint firstItem="bjS-Cd-voX" firstAttribute="bottom" secondItem="Rsh-aC-FCc" secondAttribute="bottom" id="WRV-Wj-XWb"/>
+                            <constraint firstItem="1aM-Id-k4D" firstAttribute="trailing" secondItem="e3d-AW-4K1" secondAttribute="trailing" constant="30" id="Ya6-Rt-feJ"/>
                             <constraint firstItem="bjS-Cd-voX" firstAttribute="top" secondItem="hqf-Vj-upb" secondAttribute="top" id="a8M-rB-uZf"/>
-                            <constraint firstItem="1aM-Id-k4D" firstAttribute="bottom" secondItem="hld-y9-L07" secondAttribute="bottom" constant="188" id="dBh-3P-dZH"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6mg-Ah-lRP" secondAttribute="trailing" constant="20" symbolic="YES" id="fxt-Wz-mhZ"/>
+                            <constraint firstItem="e3d-AW-4K1" firstAttribute="top" secondItem="6mg-Ah-lRP" secondAttribute="bottom" constant="50" id="cIw-e4-dZu"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6mg-Ah-lRP" secondAttribute="trailing" constant="16" id="fxt-Wz-mhZ"/>
                             <constraint firstItem="TQ2-8S-OB0" firstAttribute="leading" secondItem="PbL-cz-b73" secondAttribute="leading" id="hfl-0X-xvt"/>
                             <constraint firstItem="TQ2-8S-OB0" firstAttribute="top" secondItem="PbL-cz-b73" secondAttribute="bottom" constant="50" id="iKV-Ps-yB2"/>
                             <constraint firstItem="bjS-Cd-voX" firstAttribute="leading" secondItem="20z-fW-8L5" secondAttribute="leadingMargin" id="iwa-50-XIe"/>
                             <constraint firstItem="mbe-H1-mFm" firstAttribute="leading" secondItem="20z-fW-8L5" secondAttribute="leadingMargin" constant="10" id="pO7-nC-WBr"/>
-                            <constraint firstItem="hld-y9-L07" firstAttribute="leading" secondItem="1aM-Id-k4D" secondAttribute="leading" constant="244" id="raR-xB-Afy"/>
                             <constraint firstItem="bjS-Cd-voX" firstAttribute="leading" secondItem="hqf-Vj-upb" secondAttribute="leading" id="sDM-Li-61Z"/>
                             <constraint firstItem="TQ2-8S-OB0" firstAttribute="trailing" secondItem="PbL-cz-b73" secondAttribute="trailing" id="suh-Vw-ud0"/>
                             <constraint firstItem="xg8-us-8HO" firstAttribute="centerX" secondItem="hqf-Vj-upb" secondAttribute="centerX" id="tZg-hh-ZdZ"/>
                             <constraint firstItem="Rsh-aC-FCc" firstAttribute="top" secondItem="TQ2-8S-OB0" secondAttribute="bottom" constant="70" id="vPX-Tb-yXi"/>
+                            <constraint firstItem="Mvv-cZ-neL" firstAttribute="top" secondItem="mbe-H1-mFm" secondAttribute="bottom" constant="18" id="wBe-P3-nhx"/>
                             <constraint firstItem="1aM-Id-k4D" firstAttribute="trailing" secondItem="PbL-cz-b73" secondAttribute="trailing" id="zxV-l4-RUE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1aM-Id-k4D"/>
                     </view>
                     <navigationItem key="navigationItem" title="基本控件的使用2" id="4bg-Tu-Npx"/>
                     <connections>
-                        <outlet property="basisActivityIndicatorView" destination="hld-y9-L07" id="D1v-yK-LAa"/>
+                        <outlet property="basisActivityIndicatorBGView" destination="e3d-AW-4K1" id="ehS-ho-Lrc"/>
+                        <outlet property="basisActivityIndicatorView" destination="hOV-xW-fcL" id="VBN-lq-ju6"/>
                         <outlet property="basisProgressView" destination="mbe-H1-mFm" id="4ls-Fe-F43"/>
                         <outlet property="basisStepper" destination="hqf-Vj-upb" id="8FS-KD-00h"/>
                         <outlet property="basisStepperLab" destination="xg8-us-8HO" id="qM6-vb-aen"/>

@@ -18,6 +18,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *basisStepperLab;
 @property (weak, nonatomic) IBOutlet UIImageView *reduceImageView;
+@property (weak, nonatomic) IBOutlet UIView *basisActivityIndicatorBGView;
 
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *basisActivityIndicatorView;
 @end
@@ -43,17 +44,20 @@
     }else{
         NSLog(@"bukong");
     }
-
+    
+    self.basisActivityIndicatorBGView.hidden = YES;
+    self.basisActivityIndicatorBGView.layer.masksToBounds = YES;
+    self.basisActivityIndicatorBGView.layer.cornerRadius = 10;
 }
 
 - (IBAction)activityIndicatorLoad:(UIButton *)sender {
-    self.basisActivityIndicatorView.hidden = NO;
+    self.basisActivityIndicatorBGView.hidden = NO;
     [self.basisActivityIndicatorView startAnimating];
 }
 
 - (IBAction)activityIndicatorClose:(UIButton *)sender {
    [self.basisActivityIndicatorView stopAnimating];
-    self.basisActivityIndicatorView.hidden = YES;
+    self.basisActivityIndicatorBGView.hidden = YES;
 }
 
 - (IBAction)segmentChange:(UISegmentedControl *)sender {

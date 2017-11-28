@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *basisStepperLab;
 @property (weak, nonatomic) IBOutlet UIImageView *reduceImageView;
 
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *basisActivityIndicatorView;
 @end
 
 @implementation EightVC
@@ -32,7 +33,7 @@
     self.basisStepper.value = 0.00;
      self.basisStepper.maximumValue = 10000.00;
      self.basisStepper.minimumValue = 0.00;
-    self.basisStepper.stepValue = 15;
+    self.basisStepper.stepValue = 1;
     self.basisStepper.continuous = YES;
     
     self.basisStepperLab.text = [NSString stringWithFormat:@"%d",(int)self.basisStepper.value];
@@ -42,6 +43,17 @@
     }else{
         NSLog(@"bukong");
     }
+
+}
+
+- (IBAction)activityIndicatorLoad:(UIButton *)sender {
+    self.basisActivityIndicatorView.hidden = NO;
+    [self.basisActivityIndicatorView startAnimating];
+}
+
+- (IBAction)activityIndicatorClose:(UIButton *)sender {
+   [self.basisActivityIndicatorView stopAnimating];
+    self.basisActivityIndicatorView.hidden = YES;
 }
 
 - (IBAction)segmentChange:(UISegmentedControl *)sender {

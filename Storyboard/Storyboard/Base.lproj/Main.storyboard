@@ -108,6 +108,13 @@
                                     <segue destination="TSu-oq-8yr" kind="show" id="0Rx-4d-vV6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lm0-oE-CyP">
+                                <rect key="frame" x="129" y="337" width="117" height="30"/>
+                                <state key="normal" title="基本控件的使用5"/>
+                                <connections>
+                                    <segue destination="sQd-Lz-uLh" kind="show" id="jqJ-Kv-KYr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.83605175629023565" green="1" blue="0.64971817158186018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -133,8 +140,10 @@
                             <constraint firstItem="cVy-e5-vRD" firstAttribute="top" secondItem="LGi-yN-TdI" secondAttribute="bottom" constant="20" id="kMN-ye-4F5"/>
                             <constraint firstItem="NIo-wX-2Xh" firstAttribute="centerX" secondItem="LGi-yN-TdI" secondAttribute="centerX" id="kOv-1e-cjf"/>
                             <constraint firstItem="ubA-0C-Bwc" firstAttribute="top" secondItem="jPs-Hf-P8E" secondAttribute="bottom" constant="22" id="qdY-A4-S5Z"/>
+                            <constraint firstItem="Lm0-oE-CyP" firstAttribute="centerX" secondItem="5fj-Sq-SUk" secondAttribute="centerX" id="rPc-GD-0fc"/>
                             <constraint firstItem="erp-z3-rhV" firstAttribute="centerX" secondItem="psJ-jJ-HpM" secondAttribute="centerX" id="vW2-6W-as3"/>
                             <constraint firstItem="erp-z3-rhV" firstAttribute="centerX" secondItem="5fj-Sq-SUk" secondAttribute="centerX" id="weL-xf-6O0"/>
+                            <constraint firstItem="Lm0-oE-CyP" firstAttribute="top" secondItem="CIV-pl-dnI" secondAttribute="bottom" constant="20" id="xfp-oO-bH0"/>
                             <constraint firstItem="psJ-jJ-HpM" firstAttribute="top" secondItem="ubA-0C-Bwc" secondAttribute="bottom" constant="14" id="xxc-k0-RGL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="b8s-YZ-hkf"/>
@@ -941,6 +950,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qcW-jV-ZzV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4960.5" y="-2150.5"/>
+        </scene>
+        <!--基本控件的使用5-->
+        <scene sceneID="nsw-BK-RQ2">
+            <objects>
+                <viewController storyboardIdentifier="ElevenVCID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sQd-Lz-uLh" customClass="ElevenVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VSl-5J-dU4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="60.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Gs-ar-9Qr">
+                                <rect key="frame" x="76" y="222" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="5Ea-AV-EZc" appends="YES" id="a6r-jo-0eR"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="OMw-di-En2"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="基本控件的使用5" id="knn-3c-L1L"/>
+                    <connections>
+                        <outlet property="shoushi" destination="5Ea-AV-EZc" id="cGu-CY-vjr"/>
+                        <outlet property="tapImageView" destination="4Gs-ar-9Qr" id="UAS-4o-kc5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C7V-Fz-6wO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="5Ea-AV-EZc">
+                    <connections>
+                        <action selector="imageClick:" destination="sQd-Lz-uLh" id="UNl-QS-ApF"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="5634" y="-2176"/>
         </scene>
         <!--ShowMessageVC-->
         <scene sceneID="2Ec-Tv-hoN">

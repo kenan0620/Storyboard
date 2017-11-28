@@ -42,13 +42,6 @@
                                     <segue destination="NYS-mH-x3V" kind="show" id="97y-S1-BPI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIo-wX-2Xh">
-                                <rect key="frame" x="138" y="404" width="94" height="30"/>
-                                <state key="normal" title="WebView使用"/>
-                                <connections>
-                                    <segue destination="Ddy-4s-Jbd" kind="show" id="ziI-bK-Ceq"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nsa-Tt-N8i">
                                 <rect key="frame" x="133" y="84" width="108" height="30"/>
                                 <state key="normal" title="基本控件的使用"/>
@@ -115,6 +108,21 @@
                                     <segue destination="sQd-Lz-uLh" kind="show" id="jqJ-Kv-KYr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ecw-jV-Sxs">
+                                <rect key="frame" x="127" y="375" width="117" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="基本控件的使用6"/>
+                                <connections>
+                                    <segue destination="Vyt-Z7-0QV" kind="show" id="nl4-7R-A2E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIo-wX-2Xh">
+                                <rect key="frame" x="137" y="421" width="94" height="30"/>
+                                <state key="normal" title="WebView使用"/>
+                                <connections>
+                                    <segue destination="Ddy-4s-Jbd" kind="show" id="ziI-bK-Ceq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.83605175629023565" green="1" blue="0.64971817158186018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -133,12 +141,12 @@
                             <constraint firstItem="ubA-0C-Bwc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="b8s-YZ-hkf" secondAttribute="leading" id="Y77-EP-eRT"/>
                             <constraint firstItem="CIV-pl-dnI" firstAttribute="top" secondItem="hF0-UP-oPT" secondAttribute="bottom" constant="20" id="ZCd-k3-QWW"/>
                             <constraint firstItem="erp-z3-rhV" firstAttribute="top" secondItem="psJ-jJ-HpM" secondAttribute="bottom" constant="19" id="gVJ-uW-U12"/>
-                            <constraint firstItem="jPs-Hf-P8E" firstAttribute="top" secondItem="NIo-wX-2Xh" secondAttribute="bottom" constant="25" id="h6f-zX-w47"/>
-                            <constraint firstItem="NIo-wX-2Xh" firstAttribute="trailing" secondItem="psJ-jJ-HpM" secondAttribute="trailing" id="hc3-nO-OII"/>
+                            <constraint firstItem="jPs-Hf-P8E" firstAttribute="top" secondItem="NIo-wX-2Xh" secondAttribute="bottom" constant="8" id="h6f-zX-w47"/>
+                            <constraint firstItem="NIo-wX-2Xh" firstAttribute="trailing" secondItem="psJ-jJ-HpM" secondAttribute="trailing" constant="-1" id="hc3-nO-OII"/>
                             <constraint firstItem="cVy-e5-vRD" firstAttribute="centerX" secondItem="5fj-Sq-SUk" secondAttribute="centerX" id="iZK-Wk-A1e"/>
                             <constraint firstAttribute="trailing" secondItem="ubA-0C-Bwc" secondAttribute="trailing" constant="97" id="jk4-1K-elY"/>
                             <constraint firstItem="cVy-e5-vRD" firstAttribute="top" secondItem="LGi-yN-TdI" secondAttribute="bottom" constant="20" id="kMN-ye-4F5"/>
-                            <constraint firstItem="NIo-wX-2Xh" firstAttribute="centerX" secondItem="LGi-yN-TdI" secondAttribute="centerX" id="kOv-1e-cjf"/>
+                            <constraint firstItem="NIo-wX-2Xh" firstAttribute="centerX" secondItem="LGi-yN-TdI" secondAttribute="centerX" constant="-1" id="kOv-1e-cjf"/>
                             <constraint firstItem="ubA-0C-Bwc" firstAttribute="top" secondItem="jPs-Hf-P8E" secondAttribute="bottom" constant="22" id="qdY-A4-S5Z"/>
                             <constraint firstItem="Lm0-oE-CyP" firstAttribute="centerX" secondItem="5fj-Sq-SUk" secondAttribute="centerX" id="rPc-GD-0fc"/>
                             <constraint firstItem="erp-z3-rhV" firstAttribute="centerX" secondItem="psJ-jJ-HpM" secondAttribute="centerX" id="vW2-6W-as3"/>
@@ -986,6 +994,36 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="5634" y="-2176"/>
+        </scene>
+        <!--TwelveVC-->
+        <scene sceneID="jSf-Sj-K6y">
+            <objects>
+                <viewController id="Vyt-Z7-0QV" customClass="TwelveVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="09o-Dl-uWl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Q5Z-dF-9LG"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="EAM-wG-ITo">
+                        <nil key="title"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="navItem" destination="EAM-wG-ITo" id="E1C-7L-GpH"/>
+                        <outlet property="searchDisplayController" destination="OyA-gi-cf3" id="xSe-qg-RtI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jke-iE-ya4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="OyA-gi-cf3">
+                    <connections>
+                        <outlet property="delegate" destination="Vyt-Z7-0QV" id="VHT-Oo-OKm"/>
+                        <outlet property="searchContentsController" destination="Vyt-Z7-0QV" id="KGG-se-HjN"/>
+                        <outlet property="searchResultsDataSource" destination="Vyt-Z7-0QV" id="lOU-H0-luK"/>
+                        <outlet property="searchResultsDelegate" destination="Vyt-Z7-0QV" id="6OS-Ta-gwg"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="6432.8000000000002" y="-2235.832083958021"/>
         </scene>
         <!--ShowMessageVC-->
         <scene sceneID="2Ec-Tv-hoN">

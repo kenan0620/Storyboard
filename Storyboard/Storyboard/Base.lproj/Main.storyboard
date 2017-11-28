@@ -683,18 +683,28 @@
                                     <action selector="segmentChange:" destination="3A3-F3-yLw" eventType="valueChanged" id="uJd-fA-B8v"/>
                                 </connections>
                             </segmentedControl>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="7" translatesAutoresizingMaskIntoConstraints="NO" id="TQ2-8S-OB0">
+                                <rect key="frame" x="0.0" y="194" width="375" height="37"/>
+                                <color key="backgroundColor" red="0.91100631476683935" green="0.87915871693640057" blue="0.85581726366117761" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="pageIndicatorTintColor" red="1" green="0.42308448227682327" blue="0.40534042839569895" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.33483869869054705" green="0.22930946701515853" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" red="0.99560389997845722" green="1" blue="0.96232548341350266" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="PbL-cz-b73" firstAttribute="leading" secondItem="1aM-Id-k4D" secondAttribute="leading" id="4M8-PF-GcU"/>
                             <constraint firstItem="PbL-cz-b73" firstAttribute="top" secondItem="1aM-Id-k4D" secondAttribute="top" constant="30" id="Vy2-7M-olG"/>
+                            <constraint firstItem="TQ2-8S-OB0" firstAttribute="leading" secondItem="PbL-cz-b73" secondAttribute="leading" id="hfl-0X-xvt"/>
+                            <constraint firstItem="TQ2-8S-OB0" firstAttribute="top" secondItem="PbL-cz-b73" secondAttribute="bottom" constant="50" id="iKV-Ps-yB2"/>
+                            <constraint firstItem="TQ2-8S-OB0" firstAttribute="trailing" secondItem="PbL-cz-b73" secondAttribute="trailing" id="suh-Vw-ud0"/>
                             <constraint firstItem="1aM-Id-k4D" firstAttribute="trailing" secondItem="PbL-cz-b73" secondAttribute="trailing" id="zxV-l4-RUE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1aM-Id-k4D"/>
                     </view>
                     <navigationItem key="navigationItem" title="基本控件的使用2" id="4bg-Tu-Npx"/>
                     <connections>
-                        <outlet property="segmentView" destination="PbL-cz-b73" id="bj0-To-v9A"/>
+                        <outlet property="pageControl" destination="TQ2-8S-OB0" id="xWo-ag-63R"/>
+                        <outlet property="segmentView" destination="PbL-cz-b73" id="hdg-Gy-0Nd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H0a-Iw-kS6" userLabel="First Responder" sceneMemberID="firstResponder"/>

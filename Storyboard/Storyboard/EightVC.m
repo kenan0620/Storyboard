@@ -11,6 +11,7 @@
 @interface EightVC ()
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentView;
 
+@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 @end
 
 @implementation EightVC

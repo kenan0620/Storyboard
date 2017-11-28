@@ -694,17 +694,50 @@
                                 <color key="progressTintColor" red="1" green="0.38774618590098975" blue="0.40125796926472457" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="trackTintColor" red="0.13170673012851331" green="0.2255476913512876" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </progressView>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hqf-Vj-upb">
+                                <rect key="frame" x="16" y="301" width="94" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="stepperChanged:" destination="3A3-F3-yLw" eventType="valueChanged" id="uJy-e7-WeI"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xg8-us-8HO">
+                                <rect key="frame" x="42" y="305" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Reduce" translatesAutoresizingMaskIntoConstraints="NO" id="bjS-Cd-voX">
+                                <rect key="frame" x="16" y="301" width="29" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="29" id="naa-gu-vhQ"/>
+                                    <constraint firstAttribute="height" constant="29" id="pna-3A-H9p"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Add" translatesAutoresizingMaskIntoConstraints="NO" id="Rsh-aC-FCc">
+                                <rect key="frame" x="81" y="301" width="29" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="Bkq-fb-O3Z"/>
+                                    <constraint firstAttribute="width" constant="29" id="zvy-On-Tdt"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.99560389997845722" green="1" blue="0.96232548341350266" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="PbL-cz-b73" firstAttribute="leading" secondItem="1aM-Id-k4D" secondAttribute="leading" id="4M8-PF-GcU"/>
                             <constraint firstItem="mbe-H1-mFm" firstAttribute="leading" secondItem="20z-fW-8L5" secondAttribute="leadingMargin" constant="10" id="6AP-lx-t9S"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mbe-H1-mFm" secondAttribute="trailing" constant="10" id="6Yk-cD-y0p"/>
+                            <constraint firstItem="1aM-Id-k4D" firstAttribute="trailing" secondItem="Rsh-aC-FCc" secondAttribute="trailing" constant="265" id="CMi-Gm-msh"/>
+                            <constraint firstItem="bjS-Cd-voX" firstAttribute="top" secondItem="TQ2-8S-OB0" secondAttribute="bottom" constant="70" id="M7z-4h-juK"/>
                             <constraint firstItem="mbe-H1-mFm" firstAttribute="top" secondItem="TQ2-8S-OB0" secondAttribute="bottom" constant="30" id="Syu-09-9os"/>
                             <constraint firstItem="PbL-cz-b73" firstAttribute="top" secondItem="1aM-Id-k4D" secondAttribute="top" constant="30" id="Vy2-7M-olG"/>
+                            <constraint firstItem="bjS-Cd-voX" firstAttribute="leading" secondItem="20z-fW-8L5" secondAttribute="leading" constant="16" id="gcq-gb-SZn"/>
                             <constraint firstItem="TQ2-8S-OB0" firstAttribute="leading" secondItem="PbL-cz-b73" secondAttribute="leading" id="hfl-0X-xvt"/>
                             <constraint firstItem="TQ2-8S-OB0" firstAttribute="top" secondItem="PbL-cz-b73" secondAttribute="bottom" constant="50" id="iKV-Ps-yB2"/>
                             <constraint firstItem="TQ2-8S-OB0" firstAttribute="trailing" secondItem="PbL-cz-b73" secondAttribute="trailing" id="suh-Vw-ud0"/>
+                            <constraint firstItem="Rsh-aC-FCc" firstAttribute="top" secondItem="TQ2-8S-OB0" secondAttribute="bottom" constant="70" id="vPX-Tb-yXi"/>
                             <constraint firstItem="1aM-Id-k4D" firstAttribute="trailing" secondItem="PbL-cz-b73" secondAttribute="trailing" id="zxV-l4-RUE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1aM-Id-k4D"/>
@@ -712,6 +745,8 @@
                     <navigationItem key="navigationItem" title="基本控件的使用2" id="4bg-Tu-Npx"/>
                     <connections>
                         <outlet property="basisProgressView" destination="mbe-H1-mFm" id="4ls-Fe-F43"/>
+                        <outlet property="basisStepper" destination="hqf-Vj-upb" id="8FS-KD-00h"/>
+                        <outlet property="basisStepperLab" destination="xg8-us-8HO" id="qM6-vb-aen"/>
                         <outlet property="pageControl" destination="TQ2-8S-OB0" id="xWo-ag-63R"/>
                         <outlet property="segmentView" destination="PbL-cz-b73" id="hdg-Gy-0Nd"/>
                     </connections>
@@ -750,6 +785,8 @@
     </scenes>
     <resources>
         <image name="60.png" width="60" height="60"/>
+        <image name="Add" width="17" height="17"/>
+        <image name="Reduce" width="17" height="17"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Nfq-PI-XUz"/>

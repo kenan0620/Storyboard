@@ -14,6 +14,10 @@
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 
 @property (weak, nonatomic) IBOutlet UIProgressView *basisProgressView;
+@property (weak, nonatomic) IBOutlet UIStepper *basisStepper;
+
+@property (weak, nonatomic) IBOutlet UILabel *basisStepperLab;
+
 @end
 
 @implementation EightVC
@@ -22,11 +26,21 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.pageControl.currentPage = 3;
-    self.basisProgressView.progress = 0.3;
+    self.basisProgressView.progress = 1.3;
+    self.basisStepper.value = 0.00;
+     self.basisStepper.maximumValue = 10000.00;
+     self.basisStepper.minimumValue = 1.00;
+    self.basisStepper.stepValue = 15;
+    self.basisStepper.continuous = YES;
+    self.basisStepperLab.text = [NSString stringWithFormat:@"%d",(int)self.basisStepper.value];
 }
 
 - (IBAction)segmentChange:(UISegmentedControl *)sender {
     NSLog(@"selectedSegmentIndex~%ld",sender.selectedSegmentIndex);
+}
+- (IBAction)stepperChanged:(UIStepper *)sender {
+    NSLog(@"%d",(int)sender.value);
+    self.basisStepperLab.text = [NSString stringWithFormat:@"%d",(int)self.basisStepper.value];
 }
 
 - (void)didReceiveMemoryWarning {

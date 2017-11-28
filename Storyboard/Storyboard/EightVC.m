@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UIStepper *basisStepper;
 
 @property (weak, nonatomic) IBOutlet UILabel *basisStepperLab;
+@property (weak, nonatomic) IBOutlet UIImageView *reduceImageView;
 
 @end
 
@@ -27,12 +28,20 @@
     // Do any additional setup after loading the view.
     self.pageControl.currentPage = 3;
     self.basisProgressView.progress = 1.3;
+    
     self.basisStepper.value = 0.00;
      self.basisStepper.maximumValue = 10000.00;
-     self.basisStepper.minimumValue = 1.00;
+     self.basisStepper.minimumValue = 0.00;
     self.basisStepper.stepValue = 15;
     self.basisStepper.continuous = YES;
+    
     self.basisStepperLab.text = [NSString stringWithFormat:@"%d",(int)self.basisStepper.value];
+    if ((int)self.basisStepper.value == 0) {
+        self.reduceImageView.image = [UIImage imageNamed:@""];
+        self.basisStepperLab.hidden = YES;
+    }else{
+        NSLog(@"bukong");
+    }
 }
 
 - (IBAction)segmentChange:(UISegmentedControl *)sender {
@@ -40,6 +49,13 @@
 }
 - (IBAction)stepperChanged:(UIStepper *)sender {
     NSLog(@"%d",(int)sender.value);
+    if (sender.value > 0) {
+        self.reduceImageView.image = [UIImage imageNamed:@"Reduce"];
+        self.basisStepperLab.hidden = NO;
+    }else{
+        self.reduceImageView.image = [UIImage imageNamed:@""];
+        self.basisStepperLab.hidden = YES;
+    }
     self.basisStepperLab.text = [NSString stringWithFormat:@"%d",(int)self.basisStepper.value];
 }
 

@@ -748,6 +748,7 @@
                         <outlet property="basisStepper" destination="hqf-Vj-upb" id="8FS-KD-00h"/>
                         <outlet property="basisStepperLab" destination="xg8-us-8HO" id="qM6-vb-aen"/>
                         <outlet property="pageControl" destination="TQ2-8S-OB0" id="xWo-ag-63R"/>
+                        <outlet property="reduceImageView" destination="bjS-Cd-voX" id="Ygm-o3-Uat"/>
                         <outlet property="segmentView" destination="PbL-cz-b73" id="hdg-Gy-0Nd"/>
                     </connections>
                 </viewController>

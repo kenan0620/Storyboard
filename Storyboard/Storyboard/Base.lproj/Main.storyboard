@@ -689,10 +689,18 @@
                                 <color key="pageIndicatorTintColor" red="1" green="0.42308448227682327" blue="0.40534042839569895" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="currentPageIndicatorTintColor" red="0.33483869869054705" green="0.22930946701515853" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </pageControl>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="mbe-H1-mFm">
+                                <rect key="frame" x="26" y="261" width="323" height="2"/>
+                                <color key="progressTintColor" red="1" green="0.38774618590098975" blue="0.40125796926472457" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="trackTintColor" red="0.13170673012851331" green="0.2255476913512876" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" red="0.99560389997845722" green="1" blue="0.96232548341350266" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="PbL-cz-b73" firstAttribute="leading" secondItem="1aM-Id-k4D" secondAttribute="leading" id="4M8-PF-GcU"/>
+                            <constraint firstItem="mbe-H1-mFm" firstAttribute="leading" secondItem="20z-fW-8L5" secondAttribute="leadingMargin" constant="10" id="6AP-lx-t9S"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mbe-H1-mFm" secondAttribute="trailing" constant="10" id="6Yk-cD-y0p"/>
+                            <constraint firstItem="mbe-H1-mFm" firstAttribute="top" secondItem="TQ2-8S-OB0" secondAttribute="bottom" constant="30" id="Syu-09-9os"/>
                             <constraint firstItem="PbL-cz-b73" firstAttribute="top" secondItem="1aM-Id-k4D" secondAttribute="top" constant="30" id="Vy2-7M-olG"/>
                             <constraint firstItem="TQ2-8S-OB0" firstAttribute="leading" secondItem="PbL-cz-b73" secondAttribute="leading" id="hfl-0X-xvt"/>
                             <constraint firstItem="TQ2-8S-OB0" firstAttribute="top" secondItem="PbL-cz-b73" secondAttribute="bottom" constant="50" id="iKV-Ps-yB2"/>
@@ -703,6 +711,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="基本控件的使用2" id="4bg-Tu-Npx"/>
                     <connections>
+                        <outlet property="basisProgressView" destination="mbe-H1-mFm" id="4ls-Fe-F43"/>
                         <outlet property="pageControl" destination="TQ2-8S-OB0" id="xWo-ag-63R"/>
                         <outlet property="segmentView" destination="PbL-cz-b73" id="hdg-Gy-0Nd"/>
                     </connections>

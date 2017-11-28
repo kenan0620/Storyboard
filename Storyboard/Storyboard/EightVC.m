@@ -12,6 +12,8 @@
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentView;
 
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
+
+@property (weak, nonatomic) IBOutlet UIProgressView *basisProgressView;
 @end
 
 @implementation EightVC
@@ -19,7 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-
+    self.pageControl.currentPage = 3;
+    self.basisProgressView.progress = 0.3;
 }
 
 - (IBAction)segmentChange:(UISegmentedControl *)sender {

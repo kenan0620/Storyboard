@@ -51,8 +51,12 @@
 }
 
 - (IBAction)activityIndicatorLoad:(UIButton *)sender {
+    self.view.userInteractionEnabled = NO;
     self.basisActivityIndicatorBGView.hidden = NO;
     [self.basisActivityIndicatorView startAnimating];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(10 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        self.view.userInteractionEnabled = YES;
+    });
 }
 
 - (IBAction)activityIndicatorClose:(UIButton *)sender {
